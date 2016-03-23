@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812132AA22FA22DD244F8748 /* libPods-BingSearcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F63F39C4B89167538B528619 /* libPods-BingSearcher.a */; };
 		FD453BCB1CA18D8C0034DCF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD453BCA1CA18D8C0034DCF8 /* main.m */; };
 		FD453BCE1CA18D8C0034DCF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD453BCD1CA18D8C0034DCF8 /* AppDelegate.m */; };
 		FD453BD11CA18D8C0034DCF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD453BD01CA18D8C0034DCF8 /* ViewController.m */; };
 		FD453BD41CA18D8C0034DCF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD453BD21CA18D8C0034DCF8 /* Main.storyboard */; };
 		FD453BD61CA18D8C0034DCF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD453BD51CA18D8C0034DCF8 /* Assets.xcassets */; };
 		FD453BD91CA18D8C0034DCF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD453BD71CA18D8C0034DCF8 /* LaunchScreen.storyboard */; };
+		FD453BE21CA18E110034DCF8 /* BingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD453BE11CA18E110034DCF8 /* BingItem.m */; };
+		FD453BE51CA190040034DCF8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD453BE41CA190040034DCF8 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C3C776FA6FC9ACE0E741266 /* Pods-BingSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingSearcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingSearcher/Pods-BingSearcher.release.xcconfig"; sourceTree = "<group>"; };
+		CB03DE63FAEDE987D77FAB8E /* Pods-BingSearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingSearcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingSearcher/Pods-BingSearcher.debug.xcconfig"; sourceTree = "<group>"; };
+		F63F39C4B89167538B528619 /* libPods-BingSearcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BingSearcher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD453BC61CA18D8C0034DCF8 /* BingSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD453BCA1CA18D8C0034DCF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD453BCC1CA18D8C0034DCF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		FD453BD51CA18D8C0034DCF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD453BD81CA18D8C0034DCF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD453BDA1CA18D8C0034DCF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD453BE01CA18E110034DCF8 /* BingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingItem.h; sourceTree = "<group>"; };
+		FD453BE11CA18E110034DCF8 /* BingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingItem.m; sourceTree = "<group>"; };
+		FD453BE31CA190040034DCF8 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FD453BE41CA190040034DCF8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				812132AA22FA22DD244F8748 /* libPods-BingSearcher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B5BC7DF98676661FF668614 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB03DE63FAEDE987D77FAB8E /* Pods-BingSearcher.debug.xcconfig */,
+				8C3C776FA6FC9ACE0E741266 /* Pods-BingSearcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0076985AB0F9EC9CE991B25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F63F39C4B89167538B528619 /* libPods-BingSearcher.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD453BBD1CA18D8C0034DCF8 = {
 			isa = PBXGroup;
 			children = (
 				FD453BC81CA18D8C0034DCF8 /* BingSearcher */,
 				FD453BC71CA18D8C0034DCF8 /* Products */,
+				7B5BC7DF98676661FF668614 /* Pods */,
+				F0076985AB0F9EC9CE991B25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +92,10 @@
 				FD453BCD1CA18D8C0034DCF8 /* AppDelegate.m */,
 				FD453BCF1CA18D8C0034DCF8 /* ViewController.h */,
 				FD453BD01CA18D8C0034DCF8 /* ViewController.m */,
+				FD453BE31CA190040034DCF8 /* DetailViewController.h */,
+				FD453BE41CA190040034DCF8 /* DetailViewController.m */,
+				FD453BE01CA18E110034DCF8 /* BingItem.h */,
+				FD453BE11CA18E110034DCF8 /* BingItem.m */,
 				FD453BD21CA18D8C0034DCF8 /* Main.storyboard */,
 				FD453BD51CA18D8C0034DCF8 /* Assets.xcassets */,
 				FD453BD71CA18D8C0034DCF8 /* LaunchScreen.storyboard */,
@@ -86,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD453BDD1CA18D8C0034DCF8 /* Build configuration list for PBXNativeTarget "BingSearcher" */;
 			buildPhases = (
+				9C1DFA26520C964650E76401 /* Check Pods Manifest.lock */,
 				FD453BC21CA18D8C0034DCF8 /* Sources */,
 				FD453BC31CA18D8C0034DCF8 /* Frameworks */,
 				FD453BC41CA18D8C0034DCF8 /* Resources */,
+				B187227F627D7625B9E215A4 /* Embed Pods Frameworks */,
+				CEA146D52E4D9DA563919BD9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,11 +182,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C1DFA26520C964650E76401 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B187227F627D7625B9E215A4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingSearcher/Pods-BingSearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA146D52E4D9DA563919BD9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingSearcher/Pods-BingSearcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD453BC21CA18D8C0034DCF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD453BE51CA190040034DCF8 /* DetailViewController.m in Sources */,
+				FD453BE21CA18E110034DCF8 /* BingItem.m in Sources */,
 				FD453BD11CA18D8C0034DCF8 /* ViewController.m in Sources */,
 				FD453BCE1CA18D8C0034DCF8 /* AppDelegate.m in Sources */,
 				FD453BCB1CA18D8C0034DCF8 /* main.m in Sources */,
@@ -214,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -262,6 +349,7 @@
 		};
 		FD453BDE1CA18D8C0034DCF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB03DE63FAEDE987D77FAB8E /* Pods-BingSearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BingSearcher/Info.plist;
@@ -273,6 +361,7 @@
 		};
 		FD453BDF1CA18D8C0034DCF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3C776FA6FC9ACE0E741266 /* Pods-BingSearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BingSearcher/Info.plist;
@@ -301,6 +390,7 @@
 				FD453BDF1CA18D8C0034DCF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
